@@ -1,0 +1,309 @@
+2024-04-03 10:18:28 [main] INFO  base.TestListner - birthContainer test cases started
+2024-04-03 10:18:47 [main] INFO  test.TestClass - OTP received from server is: 3595
+2024-04-03 10:22:57 [main] INFO  base.TestListner - birthContainer test cases started
+2024-04-03 10:23:14 [main] INFO  test.TestClass - OTP received from server is: 1848
+2024-04-03 10:26:28 [main] INFO  base.TestListner - birthContainer test cases started
+2024-04-03 10:26:54 [main] INFO  test.TestClass - OTP received from server is: 5816
+2024-04-03 10:48:12 [main] INFO  base.TestListner - birthContainer test cases started
+2024-04-03 10:48:35 [main] INFO  test.TestClass - OTP received from server is: 7760
+2024-04-03 11:08:44 [main] INFO  base.TestListner - birthContainer test cases started
+2024-04-03 11:09:00 [main] INFO  test.TestClass - OTP received from server is: 8978
+2024-04-03 11:09:40 [main] INFO  base.TestListner - The name of test case passed is :birthContainer
+2024-04-03 11:09:44 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 11:15:42 [main] INFO  base.TestListner - birthContainer test cases started
+2024-04-03 11:15:43 [main] INFO  base.TestListner - The name of the testcase skipped is :birthContainer
+2024-04-03 11:15:43 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 11:17:09 [main] INFO  base.TestListner - birthContainer test cases started
+2024-04-03 11:17:09 [main] INFO  base.TestListner - The name of the testcase skipped is :birthContainer
+2024-04-03 11:17:09 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 11:17:51 [main] INFO  base.TestListner - birthContainer test cases started
+2024-04-03 11:18:06 [main] INFO  test.TestClass - OTP received from server is: 1111
+2024-04-03 11:18:09 [main] INFO  base.TestListner - The name of test case passed is :birthContainer
+2024-04-03 11:18:09 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 12:40:48 [main] INFO  base.TestListner - registration test cases started
+2024-04-03 12:41:03 [main] INFO  test.TestClass - OTP received from server is: 7080
+2024-04-03 12:41:37 [main] INFO  test.TestClass - Choose Locations
+2024-04-03 12:42:00 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-03 12:42:03 [main] INFO  test.TestClass - Religion selected
+2024-04-03 12:42:18 [main] INFO  test.TestClass - Culture Selected
+2024-04-03 12:42:31 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-03 12:44:28 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-03 12:44:28 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 14:57:08 [main] INFO  base.TestListner - registration test cases started
+2024-04-03 14:57:23 [main] INFO  test.TestClass - OTP received from server is: 2986
+2024-04-03 14:57:58 [main] INFO  test.TestClass - Choose Locations
+2024-04-03 14:58:21 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-03 14:58:25 [main] INFO  test.TestClass - Religion selected
+2024-04-03 14:58:39 [main] INFO  test.TestClass - Culture Selected
+2024-04-03 14:58:56 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-03 15:02:23 [main] INFO  test.TestClass - 100 words left
+2024-04-03 15:02:33 [main] INFO  test.TestClass - 99 words left
+2024-04-03 15:02:35 [main] INFO  test.TestClass - scroll to up
+2024-04-03 15:02:49 [main] INFO  test.TestClass - starting screen
+2024-04-03 15:02:56 [main] INFO  test.TestClass - setting button clicked
+2024-04-03 15:03:02 [main] INFO  test.TestClass - Logout Successful
+2024-04-03 15:03:02 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-03 15:03:03 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 15:11:46 [main] INFO  base.TestListner - registration test cases started
+2024-04-03 15:12:02 [main] INFO  test.TestClass - OTP received from server is: 2741
+2024-04-03 15:12:36 [main] INFO  test.TestClass - Choose Locations
+2024-04-03 15:12:58 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-03 15:13:02 [main] INFO  test.TestClass - Religion selected
+2024-04-03 15:13:16 [main] INFO  test.TestClass - Culture Selected
+2024-04-03 15:13:34 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-03 15:15:58 [main] INFO  test.TestClass - 100 words left
+2024-04-03 15:16:10 [main] INFO  test.TestClass - 99 words left
+2024-04-03 15:16:12 [main] INFO  test.TestClass - scroll to up
+2024-04-03 15:16:23 [main] INFO  test.TestClass - starting screen
+2024-04-03 15:16:31 [main] INFO  test.TestClass - setting button clicked
+2024-04-03 15:16:37 [main] INFO  test.TestClass - Logout Successful
+2024-04-03 15:16:37 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-03 15:16:38 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 16:01:47 [main] INFO  base.TestListner - registration test cases started
+2024-04-03 16:02:02 [main] INFO  test.TestClass - OTP received from server is: 8715
+2024-04-03 16:02:33 [main] INFO  base.TestListner - *** Test execution registration failed...
+2024-04-03 16:02:33 [main] INFO  base.TestListner - registration failed!
+2024-04-03 16:02:34 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 16:05:21 [main] INFO  base.TestListner - registration test cases started
+2024-04-03 16:05:36 [main] INFO  test.TestClass - OTP received from server is: 2946
+2024-04-03 16:06:10 [main] INFO  test.TestClass - Choose Locations
+2024-04-03 16:06:32 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-03 16:06:35 [main] INFO  test.TestClass - Religion selected
+2024-04-03 16:06:50 [main] INFO  test.TestClass - Culture Selected
+2024-04-03 16:07:08 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-03 16:09:35 [main] INFO  test.TestClass - 100 words left
+2024-04-03 16:09:47 [main] INFO  test.TestClass - 99 words left
+2024-04-03 16:09:49 [main] INFO  test.TestClass - scroll to up
+2024-04-03 16:10:01 [main] INFO  test.TestClass - starting screen
+2024-04-03 16:10:09 [main] INFO  test.TestClass - setting button clicked
+2024-04-03 16:10:15 [main] INFO  test.TestClass - Logout Successful
+2024-04-03 16:10:15 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-03 16:10:16 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 17:36:52 [main] INFO  base.TestListner - chatAndQuestions test cases started
+2024-04-03 17:37:06 [main] INFO  test.TestClass - OTP received from server is: 6312
+2024-04-03 17:40:57 [main] INFO  base.TestListner - The name of test case passed is :chatAndQuestions
+2024-04-03 17:40:58 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 17:57:15 [main] INFO  base.TestListner - chatAndQuestions test cases started
+2024-04-03 17:57:29 [main] INFO  test.TestClass - OTP received from server is: 7056
+2024-04-03 18:00:10 [main] INFO  base.TestListner - The name of test case passed is :chatAndQuestions
+2024-04-03 18:00:11 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-03 18:13:43 [main] INFO  base.TestListner - chatAndQuestions test cases started
+2024-04-03 18:13:57 [main] INFO  test.TestClass - OTP received from server is: 9643
+2024-04-03 18:15:29 [main] INFO  base.TestListner - The name of test case passed is :chatAndQuestions
+2024-04-03 18:15:30 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 10:35:43 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 10:35:59 [main] INFO  test.TestClass - OTP received from server is: 9700
+2024-04-04 10:36:33 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 10:36:56 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 10:36:59 [main] INFO  test.TestClass - Religion selected
+2024-04-04 10:37:14 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 10:37:31 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 10:39:57 [main] INFO  test.TestClass - 100 words left
+2024-04-04 10:40:09 [main] INFO  test.TestClass - 99 words left
+2024-04-04 10:40:12 [main] INFO  test.TestClass - scroll to up
+2024-04-04 10:40:23 [main] INFO  test.TestClass - starting screen
+2024-04-04 10:40:32 [main] INFO  test.TestClass - setting button clicked
+2024-04-04 10:40:38 [main] INFO  test.TestClass - Logout Successful
+2024-04-04 10:40:38 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 10:40:39 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 10:44:09 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 10:44:25 [main] INFO  test.TestClass - OTP received from server is: 6926
+2024-04-04 10:45:28 [main] INFO  base.TestListner - *** Test execution registration failed...
+2024-04-04 10:45:28 [main] INFO  base.TestListner - registration failed!
+2024-04-04 10:45:30 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 10:46:17 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 10:46:32 [main] INFO  test.TestClass - OTP received from server is: 8915
+2024-04-04 10:53:22 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 10:53:37 [main] INFO  test.TestClass - OTP received from server is: 3467
+2024-04-04 10:54:12 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 10:54:35 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 10:54:38 [main] INFO  test.TestClass - Religion selected
+2024-04-04 10:54:52 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 10:55:10 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 10:57:37 [main] INFO  test.TestClass - setting button clicked
+2024-04-04 10:57:57 [main] INFO  test.TestClass - Logout Successful
+2024-04-04 10:57:57 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 10:57:58 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 11:02:17 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 11:03:49 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 11:04:05 [main] INFO  test.TestClass - OTP received from server is: 5125
+2024-04-04 11:04:40 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 11:05:02 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 11:05:06 [main] INFO  test.TestClass - Religion selected
+2024-04-04 11:05:20 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 11:05:38 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 11:07:40 [main] INFO  test.TestClass - setting button clicked
+2024-04-04 11:07:47 [main] INFO  test.TestClass - Logout Successful
+2024-04-04 11:07:47 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 11:07:48 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 11:22:09 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 11:22:24 [main] INFO  test.TestClass - OTP received from server is: 5240
+2024-04-04 11:22:57 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 11:23:20 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 11:23:24 [main] INFO  test.TestClass - Religion selected
+2024-04-04 11:23:38 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 11:23:57 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 11:25:27 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 11:25:28 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 11:38:23 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 11:38:38 [main] INFO  test.TestClass - OTP received from server is: 7575
+2024-04-04 11:39:12 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 11:39:38 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 11:39:42 [main] INFO  test.TestClass - Religion selected
+2024-04-04 11:39:56 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 11:40:13 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 11:41:46 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 11:41:47 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 11:44:16 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 11:44:31 [main] INFO  test.TestClass - OTP received from server is: 2795
+2024-04-04 11:45:05 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 11:45:30 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 11:45:33 [main] INFO  test.TestClass - Religion selected
+2024-04-04 11:45:48 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 11:46:04 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 11:46:57 [main] INFO  base.TestListner - *** Test execution registration failed...
+2024-04-04 11:46:57 [main] INFO  base.TestListner - registration failed!
+2024-04-04 11:46:59 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 12:03:37 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 12:03:52 [main] INFO  test.TestClass - OTP received from server is: 2134
+2024-04-04 12:04:27 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 12:04:50 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 12:04:53 [main] INFO  test.TestClass - Religion selected
+2024-04-04 12:05:08 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 12:05:25 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 12:06:55 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 12:06:55 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 12:08:50 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 12:09:05 [main] INFO  test.TestClass - OTP received from server is: 9782
+2024-04-04 12:09:39 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 12:10:04 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 12:10:07 [main] INFO  test.TestClass - Religion selected
+2024-04-04 12:10:22 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 12:10:39 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 12:12:09 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 12:12:09 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 12:16:40 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 12:16:56 [main] INFO  test.TestClass - OTP received from server is: 7694
+2024-04-04 12:17:30 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 12:17:52 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 12:17:56 [main] INFO  test.TestClass - Religion selected
+2024-04-04 12:18:10 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 12:19:09 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 12:20:57 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 12:20:58 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 12:23:29 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 12:23:44 [main] INFO  test.TestClass - OTP received from server is: 5936
+2024-04-04 12:24:18 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 12:24:41 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 12:24:44 [main] INFO  test.TestClass - Religion selected
+2024-04-04 12:24:59 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 12:25:44 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 12:27:21 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 12:27:21 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 12:31:22 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 12:31:37 [main] INFO  test.TestClass - OTP received from server is: 4551
+2024-04-04 12:32:11 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 12:32:34 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 12:32:38 [main] INFO  test.TestClass - Religion selected
+2024-04-04 12:32:52 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 12:33:10 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 12:34:54 [main] INFO  base.TestListner - *** Test execution registration failed...
+2024-04-04 12:34:54 [main] INFO  base.TestListner - registration failed!
+2024-04-04 12:34:56 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 12:49:08 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 12:49:23 [main] INFO  test.TestClass - OTP received from server is: 5692
+2024-04-04 12:49:57 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 12:50:20 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 12:50:24 [main] INFO  test.TestClass - Religion selected
+2024-04-04 12:50:38 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 12:50:54 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 12:56:26 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 12:56:42 [main] INFO  test.TestClass - OTP received from server is: 7537
+2024-04-04 12:57:15 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 12:57:37 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 12:57:41 [main] INFO  test.TestClass - Religion selected
+2024-04-04 12:57:57 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 12:58:14 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 12:59:41 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 12:59:42 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-04 14:14:27 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 14:14:43 [main] INFO  test.TestClass - OTP received from server is: 8634
+2024-04-04 14:15:19 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 14:15:42 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 14:15:45 [main] INFO  test.TestClass - Religion selected
+2024-04-04 14:16:00 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 14:17:20 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 14:21:10 [main] INFO  base.TestListner - *** Test execution registration failed...
+2024-04-04 14:21:10 [main] INFO  base.TestListner - registration failed!
+2024-04-04 14:21:30 [main] INFO  base.TestListner - registration test cases started
+2024-04-04 14:21:44 [main] INFO  test.TestClass - OTP received from server is: 2227
+2024-04-04 14:22:41 [main] INFO  test.TestClass - Choose Locations
+2024-04-04 14:23:04 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-04 14:23:08 [main] INFO  test.TestClass - Religion selected
+2024-04-04 14:23:22 [main] INFO  test.TestClass - Culture Selected
+2024-04-04 14:24:36 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-04 14:26:08 [main] INFO  base.TestListner - The name of test case passed is :registration
+2024-04-04 14:26:09 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-05 11:02:24 [main] INFO  base.TestListner - StartPage test cases started
+2024-04-05 11:02:37 [main] INFO  test.TestClass - OTP received from server is: 8819
+2024-04-05 11:11:42 [main] INFO  base.TestListner - StartPage test cases started
+2024-04-05 11:11:55 [main] INFO  test.TestClass - OTP received from server is: 3238
+2024-04-05 12:54:45 [main] INFO  base.TestListner - startPageTest test cases started
+2024-04-05 12:56:55 [main] INFO  base.TestListner - *** Test execution startPageTest failed...
+2024-04-05 12:56:55 [main] INFO  base.TestListner - startPageTest failed!
+2024-04-05 12:56:56 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-05 12:58:49 [main] INFO  base.TestListner - startPageTest test cases started
+2024-04-05 14:01:29 [main] INFO  base.TestListner - startPageTest test cases started
+2024-04-05 14:02:11 [main] INFO  base.TestListner - The name of test case passed is :startPageTest
+2024-04-05 14:02:11 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-05 14:02:51 [main] INFO  base.TestListner - startPageTest test cases started
+2024-04-05 14:10:22 [main] INFO  base.TestListner - startPageTest test cases started
+2024-04-05 14:13:28 [main] INFO  base.TestListner - startPageTest test cases started
+2024-04-05 14:13:29 [main] INFO  base.TestListner - The name of the testcase skipped is :startPageTest
+2024-04-05 14:13:29 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-05 14:14:39 [main] INFO  base.TestListner - startPageTest test cases started
+2024-04-05 14:16:49 [main] INFO  base.TestListner - *** Test execution startPageTest failed...
+2024-04-05 14:16:49 [main] INFO  base.TestListner - startPageTest failed!
+2024-04-05 14:16:51 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-05 14:19:36 [main] INFO  base.TestListner - startPageTest test cases started
+2024-04-05 14:20:31 [main] INFO  base.TestListner - The name of test case passed is :startPageTest
+2024-04-05 14:20:32 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-05 14:42:49 [main] INFO  base.TestListner - registration test cases started
+2024-04-05 14:43:06 [main] INFO  test.TestClass - OTP received from server is: 6450
+2024-04-05 14:44:31 [main] INFO  base.TestListner - registration test cases started
+2024-04-05 14:44:47 [main] INFO  test.TestClass - OTP received from server is: 9991
+2024-04-05 14:47:09 [main] INFO  base.TestListner - registration test cases started
+2024-04-05 14:47:28 [main] INFO  test.TestClass - OTP received from server is: 5477
+2024-04-05 14:48:20 [main] INFO  base.TestListner - registration test cases started
+2024-04-05 14:48:35 [main] INFO  test.TestClass - OTP received from server is: 4053
+2024-04-05 14:49:49 [main] INFO  base.TestListner - registration test cases started
+2024-04-05 14:50:06 [main] INFO  test.TestClass - OTP received from server is: 2641
+2024-04-05 14:52:27 [main] INFO  base.TestListner - *** Test execution registration failed...
+2024-04-05 14:52:27 [main] INFO  base.TestListner - registration failed!
+2024-04-05 14:52:29 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-05 14:54:09 [main] INFO  base.TestListner - registration test cases started
+2024-04-05 14:54:24 [main] INFO  test.TestClass - OTP received from server is: 2373
+2024-04-05 14:57:17 [main] INFO  base.TestListner - registration test cases started
+2024-04-05 14:57:32 [main] INFO  test.TestClass - OTP received from server is: 6992
+2024-04-05 14:58:27 [main] INFO  base.TestListner - registration test cases started
+2024-04-05 14:58:42 [main] INFO  test.TestClass - OTP received from server is: 4646
+2024-04-05 15:00:11 [main] INFO  test.TestClass - Choose Locations
+2024-04-05 15:00:45 [main] INFO  test.TestClass - Select Religion that you Belief
+2024-04-05 15:00:49 [main] INFO  test.TestClass - Religion selected
+2024-04-05 15:01:04 [main] INFO  test.TestClass - Culture Selected
+2024-04-05 15:01:40 [main] INFO  test.TestClass - Hieght scrolled and selected
+2024-04-05 15:03:44 [main] INFO  base.TestListner - *** Test execution registration failed...
+2024-04-05 15:03:44 [main] INFO  base.TestListner - registration failed!
+2024-04-05 15:03:47 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-05 15:25:08 [main] INFO  base.TestListner - chatAndQuestions test cases started
+2024-04-05 15:25:23 [main] INFO  test.TestClass - OTP received from server is: 9875
+2024-04-05 15:29:09 [main] INFO  base.TestListner - chatAndQuestions test cases started
+2024-04-05 15:29:23 [main] INFO  test.TestClass - OTP received from server is: 8483
+2024-04-05 15:30:01 [main] INFO  base.TestListner - *** Test execution chatAndQuestions failed...
+2024-04-05 15:30:01 [main] INFO  base.TestListner - chatAndQuestions failed!
+2024-04-05 15:30:04 [main] INFO  base.TestListner - The DemoScratch1 is Finished
+2024-04-05 15:33:24 [main] INFO  base.TestListner - chatAndQuestions test cases started
+2024-04-05 15:33:38 [main] INFO  test.TestClass - OTP received from server is: 1115
+2024-04-05 15:34:16 [main] INFO  base.TestListner - *** Test execution chatAndQuestions failed...
+2024-04-05 15:34:16 [main] INFO  base.TestListner - chatAndQuestions failed!
+2024-04-05 15:34:19 [main] INFO  base.TestListner - The DemoScratch1 is Finished
