@@ -13,14 +13,31 @@ public class ProfessionHome {
     @AndroidFindBy(id = "btnAdd")
     public WebElement continueprofession;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@text='Add job title']")
+
+    @AndroidFindBy(xpath = "//*[@text='Should take about 30 seconds.']")
+    public WebElement TimeInfoText;
+    @AndroidFindBy(xpath = "//*[@text='1/2']")
+    public WebElement FirstPageNo;
+
+    @AndroidFindBy(xpath = "//*[@text='Add job title']")
     public WebElement addjobtitle;
 
     @AndroidFindBy(id = "edtSearch")
     public WebElement editsearch;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Software Developer']")
+    @AndroidFindBy(xpath = "//*[@text='Software Developer']")
     public WebElement selectjob;
+
+    //@Text='IT & Software Engineering' or 'Software Developer' //for scroll down to visible text
+    @AndroidFindBy(xpath = "//*[@text='Tell me about your profession.']")
+    public WebElement professionHomeScreenTitle;
+    @AndroidFindBy(xpath = "//*[@text=\"What's your job title?\"]")
+    public WebElement profession1stScreenQueTitle;
+    @AndroidFindBy(xpath = "//*[@text='Add job title']")
+    public WebElement DropDown1stScreenPlaceHolderText;
+    @AndroidFindBy(xpath = "//*[@text='Profession']")
+    public WebElement ProfessionHeaderTitle;
+
 
     public ProfessionHome(AppiumDriver driver) {
         this.driver = driver;
@@ -37,7 +54,7 @@ public class ProfessionHome {
 
     public void editjob() {
         editsearch.sendKeys("Software developer");
-        selectjob.click();
+
 
     }
 }

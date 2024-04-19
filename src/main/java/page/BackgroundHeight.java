@@ -14,7 +14,13 @@ public class BackgroundHeight {
         PageFactory.initElements(new AppiumFieldDecorator(driver),this);
     }
     @AndroidFindBy(xpath = "//*[@text='How tall are you?']")
-    public WebElement headerText;
+    public WebElement HeightScreenQueTitle;
+    @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")
+    public WebElement heightPrivacyText;
+    @AndroidFindBy(xpath = "//*[@text='4/6']")
+    public WebElement FourthPageNo;
+    @AndroidFindBy(xpath = "//*[@text='Inches']")
+    public WebElement HeightContainerText;
 
 
 }

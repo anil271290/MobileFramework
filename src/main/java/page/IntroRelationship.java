@@ -18,6 +18,12 @@ public class IntroRelationship {
     public WebElement Nokids;
     @AndroidFindBy(id = "com.commonfriend:id/btnAdd")
     public WebElement buttonadd;
+    @AndroidFindBy(xpath = "//*[@text='5/6']")
+    public WebElement FifthPageNo;
+    @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")
+    public WebElement fifthPagePrivacyText;
+    @AndroidFindBy(xpath = "//*[@text=\"What's your relationship status?\"]")
+    public WebElement fifthPageQueTitle;
 
 
     public IntroRelationship(AppiumDriver driver) {

@@ -2,14 +2,31 @@ package page;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import test.TestClass;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BackgroundCulture {
     public AppiumDriver driver;
+    protected static final Logger logger = LogManager.getLogger(BackgroundCulture.class);
+
+    @AndroidFindBy(xpath = "//*[@text='Background']")
+    public WebElement FirstPageHeaderTitle;
+    @AndroidFindBy(xpath = "//*[@text='2/6']")
+    public WebElement SecondPageNo;
+    @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")
+    public WebElement secondPagePrivacyText;
+    @AndroidFindBy(xpath = "//*[@text='Which cultures do you identify with?']")
+    public WebElement SecondPageQueTitle;
+    @AndroidFindBy(xpath = "//*[@text='Add cultures']")
+    public WebElement dropDownPlaceHolderText;
+    @AndroidFindBy(xpath = "//*[@text='Choose culture to add here']")
+    public WebElement belowAddCultureText;
 
     @AndroidFindBy(id = "com.commonfriend:id/txtLocationName")
     public WebElement addculture;
@@ -29,7 +46,7 @@ public class BackgroundCulture {
         if (index >= 0 && index < cultures.size()) {
             cultures.get(index).click();
         } else {
-            System.out.println("Invalid index.");
+            logger.info("Invalid index.");
         }
     }
 
@@ -49,14 +66,14 @@ public class BackgroundCulture {
     public void tickculture() {
         // Interacting with elements
         for (WebElement element : cultures) {
-            System.out.println(element.getText());
+           logger.info(element.getText());
             // Perform other actions if needed
         }
 
         // Using page object methods
         List<String> CultureTexts = getCultureTexts();
         for (String culturetext : CultureTexts) {
-            System.out.println(culturetext);
+           logger.info(culturetext);
 
 
         }

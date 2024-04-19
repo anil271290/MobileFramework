@@ -14,7 +14,12 @@ public class BackGroundAbled {
     public WebElement No;
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Yes']")
     public WebElement Yes;
-
+    @AndroidFindBy(xpath = "//*[@text='Are you differently abled?']")
+    public WebElement HandicapScreenQueTitle;
+    @AndroidFindBy(xpath = "//*[@text='5/6']")
+    public WebElement FifthPageNo;
+    @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")
+    public WebElement HandicapPrivacyText;
 
     public BackGroundAbled(AppiumDriver driver) {
         this.driver = driver;

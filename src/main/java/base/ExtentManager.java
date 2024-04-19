@@ -1,23 +1,31 @@
 package base;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.apache.commons.io.FileUtils;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 public class ExtentManager {
     private static ExtentReports extent;
-    private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
-    private static String timestamp = dateFormat.format(new Date());
-    private static String reportFileName = "Test-Automaton-Report_" + timestamp + ".html";
-
-    private static String fileSeperator = System.getProperty("file.separator");
-    private static String reportFilepath = System.getProperty("user.dir") +fileSeperator+ "TestReport";
-    private static String reportFileLocation =  reportFilepath +fileSeperator+ reportFileName;
-
+    private static ExtentTest test;
+    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH_mm_ss");
+    private static final String timestamp = dateFormat.format(new Date());
+    private static final String reportFileName = "Test-Automaton-Report_" + timestamp + ".html";
+    private static final String reportFilepath = System.getProperty("user.dir") + File.separator + "TestReport";
+    private static final String reportFileLocation = reportFilepath + File.separator + reportFileName;
+    private static final String logFilePath = "logs" + File.separator + "application.log";
 
     public static ExtentReports getInstance() {
         if (extent == null)
@@ -25,7 +33,6 @@ public class ExtentManager {
         return extent;
     }
 
-    //Create an extent report instance
     public static ExtentReports createInstance() {
         String fileName = getReportPath(reportFilepath);
 
@@ -38,20 +45,23 @@ public class ExtentManager {
 
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
-        //Set environment details
         extent.setSystemInfo("OS", "Windows");
         extent.setSystemInfo("Author", "Anill");
 
+        // Create a test instance for logs
+        test = extent.createTest("Log Details");
+
+        // Include log file contents in extent report
+        includeLogFileContents();
 
         return extent;
     }
 
-    //Create the report path
-    private static String getReportPath (String path) {
+    public static String getReportPath(String path) {
         File testDirectory = new File(path);
         if (!testDirectory.exists()) {
-            if (testDirectory.mkdir()) {
-                System.out.println("Directory: " + path + " is created!" );
+            if (testDirectory.mkdirs()) {
+                System.out.println("Directory: " + path + " is created!");
                 return reportFileLocation;
             } else {
                 System.out.println("Failed to create directory: " + path);
@@ -61,5 +71,16 @@ public class ExtentManager {
             System.out.println("Directory already exists: " + path);
         }
         return reportFileLocation;
+    }
+
+    private static void includeLogFileContents() {
+        try (BufferedReader br = new BufferedReader(new FileReader(logFilePath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                test.log(Status.INFO, line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

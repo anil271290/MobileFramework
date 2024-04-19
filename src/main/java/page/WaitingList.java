@@ -15,6 +15,8 @@ public class WaitingList {
 
     @AndroidFindBy(xpath = "//(android.widget.EditText)[1]")
     public WebElement entrycode;
+    @AndroidFindBy(xpath = "//*[@text='Waitlist!']")
+    public WebElement WaitListText;
 
     @AndroidFindBy(id = "btnSetCode")
     public WebElement arrow;

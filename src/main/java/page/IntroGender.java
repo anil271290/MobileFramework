@@ -14,12 +14,21 @@ public class IntroGender {
     public WebElement Male;
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Female']")
     public WebElement Female;
+    @AndroidFindBy(xpath = "//*[@text='Introduction']")
+    public WebElement headerTitle;
+    @AndroidFindBy(id = "com.commonfriend:id/btnLeft")
+    public WebElement backArrow;
+    @AndroidFindBy(xpath = "//*[@text='2/6']")
+    public WebElement SecondPageNo;
+    @AndroidFindBy(xpath = "//*[@text=\"What's your gender?\"]")
+    public WebElement secondPageQueTitle;
+    @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")
+    public WebElement privacyText;
 
-    @AndroidFindBy(id = "com.commonfriend:id/btnAdd")
-    public WebElement conti;
 
-    @AndroidFindBy(id = "com.android.permissioncontroller:id/permission_allow_foreground_only_button")
-    public WebElement gps;
+
+
+
 
     public IntroGender(AppiumDriver driver) {
         this.driver = driver;
@@ -30,9 +39,7 @@ public class IntroGender {
         element.click();
     }
 
-    public void currentlocation() {
-        gps.click();
-    }
+
 }
 
 

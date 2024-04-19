@@ -10,14 +10,24 @@ import org.openqa.selenium.support.PageFactory;
 public class ProfessionIndustry {
 
     public AppiumDriver driver;
+    @AndroidFindBy(xpath = "//*[@text='2/2']")
+    public WebElement SecondPageNo;
+    @AndroidFindBy(xpath = "//*[@text='Which industry?']")
+    public WebElement profession2ndScreenQueTitle;
+    @AndroidFindBy(xpath = "//*[@text='Industry']")
+    public WebElement DropDown2ndScreenPlaceHolderText;
+    @AndroidFindBy(xpath = "//*[@text='Profession']")
+    public WebElement ProfessionHeaderTitle;
 
-    @AndroidFindBy(id = "edtCompanyName")
-    public WebElement organizationname;
 
-    @AndroidFindBy(id = "edtIndustry")
-    public WebElement industry;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Technology']")
+
+
+
+    @AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/*")
+    public WebElement AllIndustriesXpath;
+
+    @AndroidFindBy(xpath = "//*[@text='Technology']")
     public WebElement addindustry;
 
     public ProfessionIndustry(AppiumDriver driver) {
@@ -25,15 +35,7 @@ public class ProfessionIndustry {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    public void entrorganization() {
-        organizationname.sendKeys("Innovate");
-    }
 
-    public void clickindustry() {
-        industry.click();
-    }
 
-    public void selectindustry() {
-        addindustry.click();
-    }
+
 }

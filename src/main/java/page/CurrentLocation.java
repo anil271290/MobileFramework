@@ -16,15 +16,21 @@ public class CurrentLocation {
 
     @AndroidFindBy(id = "com.android.permissioncontroller:id/permission_deny_button")
     public WebElement permissionDeny;
+    @AndroidFindBy(xpath = "//*[@text='Approximate']")
+    public WebElement approxRadioImage;
+    @AndroidFindBy(xpath = "//*[@text='Precise']")
+    public WebElement PreciseRadioImage;
+    @AndroidFindBy(xpath = "//*[@text='Your location.']")
+    public WebElement thirdPageQueTitle;
+    @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")
+    public WebElement thirdPagePrivacyText;
+    @AndroidFindBy(xpath = "//*[@text='3/6']")
+    public WebElement ThirdPageNo;
 
     public CurrentLocation(AppiumDriver driver) {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver),this);
     }
-        public void location(){
-        conti.click();
-        gps.click();
-        }
 
 
 }

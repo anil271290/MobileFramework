@@ -13,8 +13,16 @@ public class Photos {
 
     @AndroidFindBy(id = "btnAdd")
     public WebElement continuebttn;
+    @AndroidFindBy(xpath = "//*[@text=\"And finally, share any photos you'd like.\"]")
+    public WebElement PhotoHomeScreenTitle;
+    @AndroidFindBy(xpath = "//*[@text='Should take about a minute.']")
+    public WebElement TimeInfoText;
     @AndroidFindBy(id = "btnAction")
     public WebElement okbutn;
+    @AndroidFindBy(id = "com.commonfriend:id/txtMsgDesc")
+    public WebElement DialogBoxMsg;
+    @AndroidFindBy(xpath = "//*[@text='Just FYI']")
+    public WebElement DialogBoxHeader;
 
     @AndroidFindBy(id = "com.commonfriend:id/imgDisplayPicture")
     public WebElement plusphoto;
@@ -32,7 +40,7 @@ public class Photos {
     public void continuephoto() throws InterruptedException {
         continuebttn.click();
         Thread.sleep(3000);
-        okbutn.click();
+
     }
 
     public void tapphoto() {

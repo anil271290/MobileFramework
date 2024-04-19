@@ -18,6 +18,19 @@ public class IntroName {
     @AndroidFindBy(id = "com.commonfriend:id/btnContinue")
     public WebElement cntn;
 
+    @AndroidFindBy(xpath = "//*[@text='Aahuja']")
+    public WebElement lastNameText;
+    @AndroidFindBy(xpath = "//*[@text='Visible to your matches only']")
+    public WebElement privacyText;
+    @AndroidFindBy(xpath = "//*[@text='Introduction']")
+    public WebElement headerTitle;
+    @AndroidFindBy(id = "com.commonfriend:id/btnLeft")
+    public WebElement backArrow;
+    @AndroidFindBy(xpath = "//*[@text='1/6']")
+    public WebElement FirstPageNo;
+    @AndroidFindBy(xpath = "//*[@text=\"What's your name?\"]")
+    public WebElement firstPageQueTitle;
+
     public IntroName(AppiumDriver driver) {
 
         this.driver = driver;

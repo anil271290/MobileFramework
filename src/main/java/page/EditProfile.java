@@ -29,6 +29,8 @@ public class EditProfile {
     public WebElement crossbtn;
     @AndroidFindBy(xpath = "//*[@text='Gender']")
     public WebElement textGender;
+    @AndroidFindBy(xpath = "//*[@text='Line of work']")
+    public WebElement WorkHeaderText;
 
 
     public EditProfile(AppiumDriver driver) {

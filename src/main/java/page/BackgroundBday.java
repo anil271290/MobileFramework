@@ -28,6 +28,15 @@ public class BackgroundBday {
     public WebElement month;
     @AndroidFindBy(id = "com.commonfriend:id/date_Picker")
     public WebElement container;
+    @AndroidFindBy(xpath = "//*[@text=\"When's your birthday?\"]")
+    public WebElement bdayQueTitle;
+
+    @AndroidFindBy(xpath = "//*[@text='Background']")
+    public WebElement ThirdPageHeaderTitle;
+    @AndroidFindBy(xpath = "//*[@text='3/6']")
+    public WebElement ThirdPageNo;
+    @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")
+    public WebElement thirdPagePrivacyText;
 
   //public  WebElement container = driver.findElement(MobileBy.id("com.commonfriend:id/date_Picker"));
 

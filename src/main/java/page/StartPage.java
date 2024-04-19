@@ -28,6 +28,15 @@ public class    StartPage {
     @AndroidFindBy(xpath = "//*[@text='We are new! We want your support\n" +
             "and patience. ']")
     public WebElement namasteTextXpath;
+    @AndroidFindBy(xpath = "//*[@text='Who is it for?']")
+    public WebElement startPageScreenTitle;
+    @AndroidFindBy(xpath = "//*[@text='If required, I shall use this number\n" +
+            "to get in touch.']")
+    public WebElement startPageMiniTitle;
+    @AndroidFindBy(xpath = "//*[@text='I will send you a text with a verification code.']")
+    public WebElement verificationText;
+    @AndroidFindBy(xpath = "//*[@text=\"By login in you agree to my 'Term' and 'Privacy Policy'\"]")
+    public WebElement privacyPolicyText;
 
     @AndroidFindBy(id = "btnNext")
     public WebElement firstButton;

@@ -1,11 +1,8 @@
 package util;
 
-import base.ExtentTestManager;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -16,8 +13,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Arrays;
@@ -27,7 +22,7 @@ import java.util.Date;
 
 public class Utils {
     protected static final Logger logger = LogManager.getLogger(Utils.class);
-    public static final long WAIT = 10;
+
     public static AppiumDriver driver;
     protected WebDriverWait wait;
 
@@ -65,10 +60,9 @@ public class Utils {
             swipe.addAction(input.createPointerMove(Duration.ofMillis(0), PointerInput.Origin.viewport(), startX, startY));
             swipe.addAction(input.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
             swipe.addAction(input.createPointerMove(Duration.ofMillis(600), PointerInput.Origin.viewport(), endX, endY));
-            driver.perform(Arrays.asList(swipe));
-            //  endY = (int) (endY - (size.height * 0.2)); // Adjust this value based on your requirement
+           // driver.perform(Arrays.asList(swipe));
+            driver.perform(Collections.singletonList(swipe));
 
-            // wait.until(ExpectedConditions.invisibilityOfElementLocated(By.tagName("2000")));
         }
     }
 
@@ -110,37 +104,16 @@ public class Utils {
 
 
     public void waitForElementWithFluentWait(WebElement element) {
-        FluentWait fluent = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(30))
+        FluentWait<AppiumDriver> fluent = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(30))
                 .pollingEvery(Duration.ofSeconds(5))
                 .ignoring(NoSuchElementException.class)
                 .ignoring(TimeoutException.class);
         fluent.until(t -> element.isDisplayed());
     }
 
-    public static void takeScreenshot(String description) {
-        try {
-            TakesScreenshot ts = (TakesScreenshot) driver;
-            String base64Screenshot = ts.getScreenshotAs(OutputType.BASE64);
 
-            // Format current date and time as ddMMyyyy-HHmmss
-            SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyyy-HHmmss");
-            String currentDate = dateFormat.format(new Date());
 
-            // Construct screenshot file name
-            String screenshotName = currentDate + ".png";
-
-            // Save screenshot to the screenshots directory
-            File screenshotFile = new File("./TestReport/screenshots/" + screenshotName);
-            FileUtils.writeByteArrayToFile(screenshotFile, OutputType.BYTES.convertFromBase64Png(base64Screenshot));
-
-            // Provide media entity for the extent report
-            ExtentTestManager.getTest().info(description, MediaEntityBuilder.createScreenCaptureFromPath("../TestReport/screenshots/" + screenshotName).build());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static String getCurrentTimeStamp() {
+    public  String getCurrentTimeStamp() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyyy_HHmmss");
         return dateFormat.format(new Date());
     }
@@ -184,8 +157,8 @@ public class Utils {
         swipeSequence.addAction(swipeAction.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
         swipeSequence.addAction(swipeAction.createPointerMove(Duration.ofMillis(1000), PointerInput.Origin.viewport(), endX, endY));
         swipeSequence.addAction(swipeAction.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
-
         driver.perform(Arrays.asList(swipeSequence));
+
     }
 
 
