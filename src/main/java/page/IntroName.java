@@ -18,7 +18,7 @@ public class IntroName {
     @AndroidFindBy(id = "com.commonfriend:id/btnContinue")
     public WebElement cntn;
 
-    @AndroidFindBy(xpath = "//*[@text='Aahuja']")
+    @AndroidFindBy(xpath = "//*[@text='Sharma']")
     public WebElement lastNameText;
     @AndroidFindBy(xpath = "//*[@text='Visible to your matches only']")
     public WebElement privacyText;

@@ -2,6 +2,7 @@ package util;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -41,7 +42,8 @@ public class Utils {
             swipe.addAction(input.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
             swipe.addAction(input.createPointerMove(Duration.ofMillis(600), PointerInput.Origin.viewport(), endX, endY));
             //swipe.addAction(input.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
-            driver.perform(Arrays.asList(swipe));
+            driver.perform(Collections.singletonList(swipe));
+
         }
     }
 
@@ -75,6 +77,37 @@ public class Utils {
         driver.findElement(AppiumBy.androidUIAutomator(command)).click();
     }
 
+    public void swipeToAGivenXpathAndClick(String elementText) {
+        // Construct the XPath expression to locate the element with the given text
+        String xpathExpression = "//*[contains(text(), '" + elementText + "')]";
+
+        // Scroll to the element using the XPath expression
+        WebElement element = driver.findElement(By.xpath(xpathExpression));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+
+        // Click on the element
+        element.click();
+    }
+    public  void scrollToElementInContainer(  WebElement containerXPath, WebElement targetElementXPath) {
+        // Assuming you have already initialized your AndroidDriver instance
+
+// Step 1: Identify the container element
+        WebElement container = driver.findElement(By.xpath(String.valueOf(containerXPath)));
+
+// Step 2: Identify the target element within the container
+        WebElement targetElement = container.findElement(By.xpath(String.valueOf(targetElementXPath)));
+
+// Step 3: Scroll within the container until the target element becomes visible
+        String containerId = container.getAttribute("resourceId");
+        String targetElementId = targetElement.getAttribute("resourceId");
+
+        String scrollCommand = "new UiScrollable(new UiSelector().resourceId(\"" + containerId + "\")).scrollIntoView("
+                + "new UiSelector().resourceId(\"" + targetElementId + "\"));";
+
+       // ((AndroidDriver)driver).findElementByAndroidUIAutomator(scrollCommand);
+        driver.findElement(AppiumBy.androidUIAutomator(scrollCommand));
+
+    }
 
     public void swipeToHorizontal(String elementText) {
         String uiSelector = "new UiSelector().textMatches(\"" + elementText
@@ -162,4 +195,6 @@ public class Utils {
     }
 
 
+    public void waitForElementToBeVisible(boolean enabled) {
+    }
 }

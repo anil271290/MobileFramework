@@ -56,6 +56,12 @@ public class Finance {
 
     @AndroidFindBy(id = "btnAction")
     public WebElement okaybutton;
+
+    @AndroidFindBy(xpath = "//*[@text='Proceed']")
+    public WebElement proceedBtn;
+    @AndroidFindBy(xpath = "//*[@text='Prefer not to say']")
+    public WebElement preferNotToSayBtn;
+
     @AndroidFindBy(xpath = "//*[@content-desc=\"Value, 0\"]")
     public WebElement dotbutton;
     @AndroidFindBy(xpath = "//*[@text='About Net worth']")

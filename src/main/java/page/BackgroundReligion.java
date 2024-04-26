@@ -18,7 +18,7 @@ public class BackgroundReligion {
     public WebElement firstPagePrivacyText;
     @AndroidFindBy(xpath = "//*[@text='What religion do you follow?']")
     public WebElement FirstPageQueTitle;
-    @AndroidFindBy(xpath = "//*[@text='Select religion']")
+    @AndroidFindBy(xpath = "//*[@text='Add religion']")
     public WebElement dropDownPlaceHolderText;
     @AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/*")
     public WebElement allReligionXpath;

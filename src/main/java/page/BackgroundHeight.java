@@ -21,6 +21,10 @@ public class BackgroundHeight {
     public WebElement FourthPageNo;
     @AndroidFindBy(xpath = "//*[@text='Inches']")
     public WebElement HeightContainerText;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@text='0\"']")
+    public WebElement DefaultInchXpath;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@text='8\"']")
+    public WebElement EightInchXpath;
 
 
 }

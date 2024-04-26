@@ -29,6 +29,10 @@ public class Photos {
 
     @AndroidFindBy(id = "com.android.permissioncontroller:id/permission_allow_button")
     public WebElement allow;
+    @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Screenshots\")")
+    public WebElement selectPhotoFolder;
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Photo taken on 07-Dec-2023 10:54:05 am\")")
+    public WebElement selectPhoto;
     @AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/*[2]")
     public WebElement firstphoto;
 
@@ -46,6 +50,6 @@ public class Photos {
     public void tapphoto() {
        plusphoto.click();
        allow.click();
-       firstphoto.click();
+
     }
 }

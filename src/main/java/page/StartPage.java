@@ -35,7 +35,7 @@ public class    StartPage {
     public WebElement startPageMiniTitle;
     @AndroidFindBy(xpath = "//*[@text='I will send you a text with a verification code.']")
     public WebElement verificationText;
-    @AndroidFindBy(xpath = "//*[@text=\"By login in you agree to my 'Term' and 'Privacy Policy'\"]")
+    @AndroidFindBy(xpath = "//*[@text=\"By login in you agree to my 'Terms' and 'Privacy Policy'\"]")
     public WebElement privacyPolicyText;
 
     @AndroidFindBy(id = "btnNext")

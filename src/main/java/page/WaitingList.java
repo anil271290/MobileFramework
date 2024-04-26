@@ -96,7 +96,7 @@ public class WaitingList {
     }
 
     public void feedback() {
-        editfeedback.sendKeys("hello hi how r u,khaana khake jana");
+        editfeedback.sendKeys("hello hi how r u?");
         submit.click();
     }
 
