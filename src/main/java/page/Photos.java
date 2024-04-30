@@ -13,9 +13,9 @@ public class Photos {
 
     @AndroidFindBy(id = "btnAdd")
     public WebElement continuebttn;
-    @AndroidFindBy(xpath = "//*[@text=\"And finally, share any photos you'd like.\"]")
+    @AndroidFindBy(id = "com.commonfriend:id/txtTagLine")
     public WebElement PhotoHomeScreenTitle;
-    @AndroidFindBy(xpath = "//*[@text='Should take about a minute.']")
+    @AndroidFindBy(id = "com.commonfriend:id/txtBottomTagLine")
     public WebElement TimeInfoText;
     @AndroidFindBy(id = "btnAction")
     public WebElement okbutn;

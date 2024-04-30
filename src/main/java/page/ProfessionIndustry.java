@@ -14,7 +14,7 @@ public class ProfessionIndustry {
     public WebElement SecondPageNo;
     @AndroidFindBy(xpath = "//*[@text='Which industry?']")
     public WebElement profession2ndScreenQueTitle;
-    @AndroidFindBy(xpath = "//*[@text='Industry']")
+    @AndroidFindBy(xpath = "//*[@resource-id=\"com.commonfriend:id/llPrivacy\"]/../*[3]/*[1]/*")
     public WebElement DropDown2ndScreenPlaceHolderText;
     @AndroidFindBy(xpath = "//*[@text='Profession']")
     public WebElement ProfessionHeaderTitle;

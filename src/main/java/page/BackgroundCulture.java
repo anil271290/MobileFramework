@@ -16,12 +16,12 @@ public class BackgroundCulture {
     protected static final Logger logger = LogManager.getLogger(BackgroundCulture.class);
 
     @AndroidFindBy(xpath = "//*[@text='Background']")
-    public WebElement FirstPageHeaderTitle;
+    public WebElement SecondPageHeaderTitle;
     @AndroidFindBy(xpath = "//*[@text='2/6']")
     public WebElement SecondPageNo;
     @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")
     public WebElement secondPagePrivacyText;
-    @AndroidFindBy(xpath = "//*[@text='Which cultures do you identify with?']")
+    @AndroidFindBy(xpath = "//*[@resource-id=\"com.commonfriend:id/txtQuestion\"]")
     public WebElement SecondPageQueTitle;
     @AndroidFindBy(xpath = "//*[@text='Add cultures']")
     public WebElement dropDownPlaceHolderText;
@@ -30,6 +30,8 @@ public class BackgroundCulture {
 
     @AndroidFindBy(id = "com.commonfriend:id/txtLocationName")
     public WebElement addculture;
+    @AndroidFindBy(id = "com.commonfriend:id/btnDialogContinue")
+    public WebElement coninuecl;
 
     @AndroidFindByAllSet(value = {@AndroidFindAll(value = {@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.commonfriend:id/txtCulture']")})})
     public static List<WebElement> cultures;
@@ -50,8 +52,7 @@ public class BackgroundCulture {
         }
     }
 
-    @AndroidFindBy(id = "com.commonfriend:id/btnDialogContinue")
-    public WebElement coninuecl;
+
 
 
     public BackgroundCulture(AppiumDriver driver) {
@@ -59,9 +60,7 @@ public class BackgroundCulture {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    public void AddCulture() {
-        addculture.click();
-    }
+
 
     public void tickculture() {
         // Interacting with elements
@@ -88,5 +87,7 @@ public class BackgroundCulture {
         coninuecl.click();
     }
 
-
+    public void AddCulture() {
+        addculture.click();
+    }
 }

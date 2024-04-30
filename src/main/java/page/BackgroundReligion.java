@@ -10,6 +10,10 @@ import org.openqa.selenium.support.pagefactory.FieldDecorator;
 public class BackgroundReligion {
 
     public AppiumDriver driver;
+    @AndroidFindBy(id = "com.commonfriend:id/txtTagLine")
+    public WebElement BackgroundHomePageTitleText;
+    @AndroidFindBy(id = "com.commonfriend:id/btnAdd")
+    public WebElement buttonadd;
     @AndroidFindBy(xpath = "//*[@text='Background']")
     public WebElement FirstPageHeaderTitle;
     @AndroidFindBy(xpath = "//*[@text='1/6']")
@@ -18,7 +22,7 @@ public class BackgroundReligion {
     public WebElement firstPagePrivacyText;
     @AndroidFindBy(xpath = "//*[@text='What religion do you follow?']")
     public WebElement FirstPageQueTitle;
-    @AndroidFindBy(xpath = "//*[@text='Add religion']")
+    @AndroidFindBy(xpath = "//*[@resource-id=\"com.commonfriend:id/txtLocationName\"]")
     public WebElement dropDownPlaceHolderText;
     @AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/*")
     public WebElement allReligionXpath;

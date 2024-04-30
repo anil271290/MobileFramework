@@ -67,7 +67,17 @@ public class Utils {
 
         }
     }
+    public  void scrollToElementByText(String elementText) {
+        JavascriptExecutor js = driver;
+        String script = "arguments[0].scrollIntoView();";
+        String xpathExpression = "//*[contains(@text, '" + elementText + "')]";
 
+        // Find the element by xpath
+        Object element = driver.findElement(By.xpath(xpathExpression));
+
+        // Scroll to the element using JavaScript executor
+        js.executeScript(script, element);
+    }
 
     public void swipeToAGivenTextAndClick(String elementText) {
         String uiSelector = "new UiSelector().textMatches(\"" + elementText
@@ -79,7 +89,7 @@ public class Utils {
 
     public void swipeToAGivenXpathAndClick(String elementText) {
         // Construct the XPath expression to locate the element with the given text
-        String xpathExpression = "//*[contains(text(), '" + elementText + "')]";
+        String xpathExpression = "//*[contains(@text, '" + elementText + "')]";
 
         // Scroll to the element using the XPath expression
         WebElement element = driver.findElement(By.xpath(xpathExpression));

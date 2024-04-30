@@ -16,8 +16,7 @@ public class IntroRelationship {
 
     @AndroidFindBy(xpath = "//*[@text='No']")
     public WebElement Nokids;
-    @AndroidFindBy(id = "com.commonfriend:id/btnAdd")
-    public WebElement buttonadd;
+
     @AndroidFindBy(xpath = "//*[@text='5/6']")
     public WebElement FifthPageNo;
     @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")

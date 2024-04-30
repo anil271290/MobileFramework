@@ -8,6 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class IntroName {
     public AppiumDriver driver;
+    @AndroidFindBy(id = "com.commonfriend:id/btnAdd")
+    public WebElement continue1;
+    @AndroidFindBy(id = "com.commonfriend:id/txtTagLine")
+    public WebElement IntroHomeTitleText;
 
     @AndroidFindBy(id = "com.commonfriend:id/edtFirstName")
     public WebElement fname;

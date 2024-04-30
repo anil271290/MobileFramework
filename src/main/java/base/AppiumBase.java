@@ -24,7 +24,7 @@ public class AppiumBase {
     protected static final Logger logger = LogManager.getLogger(AppiumBase.class);
     private AppiumDriver driver;
 
-
+    DesiredCapabilities cap = new DesiredCapabilities();
     public void setup() throws MalformedURLException {
        /* DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability("deviceName", "samsung SM-N960F");
@@ -37,7 +37,7 @@ public class AppiumBase {
         cap.setCapability("automationName", "UiAutomator2");
         cap.setCapability("videoRecordingEnabled", "true");*/
 
-        DesiredCapabilities cap = new DesiredCapabilities();
+
 
         cap.setCapability("deviceName", "motorola moto g72");
         cap.setCapability("udid", "ZD22284NN5");
@@ -49,11 +49,23 @@ public class AppiumBase {
         cap.setCapability("appWaitForLaunch",false);
         cap.setCapability("automationName", "UiAutomator2");
         cap.setCapability("appWaitActivity", "com.commonfriend.TutorialActivity");
+        cap.setCapability("enforceXPath1", true);
 
         URL url = new URL("http://127.0.0.1:4723/");
         driver = new AppiumDriver(url, cap);
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
+    }
+
+    public void setupEmulator() throws MalformedURLException {
+        cap.setCapability("app","C:\\Users\\ANIL PATEL\\Automation Library\\Appium\\cm1550.apk");
+        cap.setCapability("deviceName","pixel13");
+        cap.setCapability("platformName","android");
+        cap.setCapability("automationName","UiAutomator2");
+        URL url=new URL("http://127.0.0.1:4723");
+        driver=new AppiumDriver(url,cap);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
+
     }
 
     public AppiumDriver getAppiumDriver() {

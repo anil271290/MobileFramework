@@ -19,8 +19,9 @@ public class CheckList {
 
     @AndroidFindBy(id = "btnSave")
     public WebElement savechecklistbutton;
-    @AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector()).scrollIntoView(text(\\\"Vegan\\\"));")
+    @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Vegan\")")
     public WebElement scrolllling;
+
 
 
     public CheckList(AppiumDriver driver) {

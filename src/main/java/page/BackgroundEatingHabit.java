@@ -1,11 +1,12 @@
 package page;
 
+import base.TestListener;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.*;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BackgroundEatingHabit {
@@ -22,7 +23,8 @@ public class BackgroundEatingHabit {
     public WebElement EatingPrivacyText;
     @AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/*")
     public List<WebElement> allEatHabitsXpath;
-
+    @AndroidFindByAllSet(value = {@AndroidFindAll(value = {@AndroidBy(xpath = "//androidx.recyclerview.widget.RecyclerView/*")})})
+    public static List<WebElement> allEatHabits;
 
 
     public BackgroundEatingHabit(AppiumDriver driver) {
@@ -34,5 +36,12 @@ public class BackgroundEatingHabit {
         ehabit.click();
     }
 
+    public  List<String> getEatHabitTexts() {
+        List<String> HabitTexts = new ArrayList<>();
+        for (WebElement element : allEatHabits) {
+            HabitTexts.add(element.getText());
+        }
+        return HabitTexts;
+    }
 
 }

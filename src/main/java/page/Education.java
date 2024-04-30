@@ -15,15 +15,15 @@ public class Education {
     public WebElement TimeInfoText;
     @AndroidFindBy(id = "btnAdd")
     public WebElement continueeducation;
-    @AndroidFindBy(xpath = "//*[@text=\"Let's explore your educational background.\"]")
+    @AndroidFindBy(xpath = "//*[@resource-id=\"com.commonfriend:id/txtTagLine\"]")
     public WebElement educationHomeScreenTitle;
-    @AndroidFindBy(xpath = "//*[@text=\"What are your education details?\"]")
+    @AndroidFindBy(xpath = "//*[@resource-id=\"com.commonfriend:id/txtQuestion\"]")
     public WebElement education1stScreenQueTitle;
     @AndroidFindBy(xpath = "//*[@text='Visible to your recommendations only']")
     public WebElement educationPrivacyText;
     @AndroidFindBy(xpath = "//*[@text=\"Visible to your recommendations only\"]")
     public WebElement privacyText;
-    @AndroidFindBy(xpath = "//*[@text='Add']")
+    @AndroidFindBy(xpath = "//*[@resource-id=\"com.commonfriend:id/llPrivacy\"]/../*[3]/*[1]/*")
     public WebElement dropDownPlaceHolderText;
     @AndroidFindBy(xpath = "//*[@text=\"Add qualification\"]")
     public WebElement qualificationHeader;
@@ -38,9 +38,9 @@ public class Education {
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Full-Time']")
     public WebElement degreetype;
-    @AndroidFindBy(xpath = "//*[@text=\"What was the type of degree?\"]")
+    @AndroidFindBy(xpath = "//*[@resource-id=\"com.commonfriend:id/txtTypeQuestion\"]")
     public WebElement DegreeScreenQueText;
-    @AndroidFindBy(xpath = "//*[@text='Add college name']")
+    @AndroidFindBy(id = "com.commonfriend:id/txtHeaderTitle")
     public WebElement CollageScreenHeaderText;
 
     @AndroidFindBy(className = "android.widget.EditText")
@@ -52,6 +52,8 @@ public class Education {
     public WebElement deletButton;
     @AndroidFindBy(xpath = "//*[@text='Add']/../*[1]")
     public WebElement PlusButtonImage;
+    @AndroidFindBy(id = "com.commonfriend:id/btnContinue")
+    public WebElement BtnContinue;
 
     public Education(AppiumDriver driver) {
         this.driver = driver;
